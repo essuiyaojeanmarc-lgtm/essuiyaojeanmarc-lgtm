@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pour toi ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pour toi ❤️</h1>
+        <p><font  color="red"><b>Joyeux anniversaire 🎉ma grande sœur adorée !</font>
+Merci d’avoir toujours été là pour moi  à la fois comme une amie, une confidente et parfois une deuxième maman (même quand je faisais des bêtises 😅). Tu as ce don incroyable de protéger sans étouffer, de conseiller sans juger, et de faire rire même quand ça ne va pas.
+Je te souhaite une année remplie de rires, de beaux projets et de tout l’amour que tu mérites. 💖 QUE DIEU TE BENNISSE 🙏</b> </p>
+        <button onclick="revealMessage()">Clique ici</button>
+        <div id="secretMessage" class="hidden-message">
+            Tu n'es pas prête pour la suite... <br>
+            <br>
+            <a href="galerie.html" class="cta-button">Continuer</a>
+        </div>
+    </div>
+
+    <script>
+        function revealMessage() {
+            const message = document.getElementById('secretMessage');
+            message.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

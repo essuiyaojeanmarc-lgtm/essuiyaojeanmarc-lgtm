@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christelle ✨</title>
+  <link rel="stylesheet" href="galerie.css">
+</head>
+<body>
+  <div class="gallery-container">
+    <h1>  💖💖</h1>
+
+    <div class="gallery">
+      <div class="item wide">
+        <img src="1.jpg" alt="Souvenir 1">
+      </div>
+      <div class="item tall">
+        <video autoplay muted loop playsinline>
+            <source src="A.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="item small">
+        <img src="2.jpg" alt="Souvenir 2">
+      </div>
+
+      <div class="item wide">
+        <video autoplay muted loop playsinline>
+            <source src="B.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="item wide">
+        <img src="3.jpg" alt="Souvenir 3">
+      </div>
+
+      <div class="item medium">
+        <video autoplay muted loop playsinline>
+            <source src="C.mp4" type="video/mp4">
+        </video>
+      </div>
+
+
+<div class="item wide">
+        <img src="3.jpg" alt="Souvenir 3">
+      </div>
+
+
+      <div class="item wide">
+        <img src="4.jpg" alt="Souvenir 4">
+      </div>
+
+      <div class="item medium">
+        <video autoplay muted loop playsinline>
+            <source src="D.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      
+      <div class="item wide">
+        <img src="6.jpg" alt="Souvenir 6">
+      </div>
+
+<div class="item tall">
+        <img src="5.jpg" alt="Souvenir 5">
+      </div>
+
+      <div class="item wide">
+        <img src="7.jpg" alt="Souvenir 7">
+      </div>
+    </div>
+  </div>
+  
+ <div class="container">
+    <p>Respire un bon coup avant de continuer, parce t'es pas prête pour ce qui arrive...😁</p>
+    <a href="final.html" class="cta-button">Continuer</a>
+ </div>
+
+<script>
+  window.addEventListener("load", () => {
+    const videos = document.querySelectorAll("video");
+    
+    videos.forEach(video => {
+      video.muted = true;            // sécurité supplémentaire
+      video.playsInline = true;
+      video.currentTime = 0;         // repart du début
+      video.play().catch(err => {
+        console.warn("Vidéo non lancée :", err);
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
